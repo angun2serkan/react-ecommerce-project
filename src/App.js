@@ -1,11 +1,12 @@
-import './App.css';
 import Header from './components/Header';
+import Home from './components/Home';
+import classes from './App.module.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className={classes.app}>
       <Header/>
-
+      <Home/>
     </div>
   );
 }

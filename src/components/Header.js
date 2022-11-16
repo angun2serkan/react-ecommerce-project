@@ -30,7 +30,7 @@ function Header() {
         
         <div className="nav__item">
           <ShoppingBasketIcon className={classes.nav__itemBasket} font-size="large"/>
-          <span className={classes.nav__basketCount}>0</span>
+          <span className={`${classes.nav__itemLineTwo} ${classes.nav__basketCount}`}>0</span>
         </div>
       </div>
     </div>
