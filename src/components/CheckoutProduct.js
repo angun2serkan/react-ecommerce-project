@@ -1,30 +1,39 @@
 import React from 'react';
+import {useStateValue} from "../StateProvider";
 import classes from './CheckoutProduct.module.css';
 
 
-function CheckoutProduct(props) {
-  return (
-    <div className={classes.checkoutProduct}>
-        <img src="https://i.pinimg.com/originals/9b/07/a9/9b07a9902e0a62b91c80adfc0e50eb68.jpg" className={classes.checkout__image}/>
+function CheckoutProduct({ id, image, title, price, rating }) {
+    const [{basket}, dispatch] = useStateValue();
 
-        <div className={classes.checkoutProduct__info}>
-            <p className={classes.checkoutProduct__title}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ea!
-            </p>
+    const removeFromBasket = () => {
+        dispatch({
+            type: "REMOVE_FROM_BASKET",
+            id: id,
+        })
+    }
+    return (
+        <div className={classes.checkoutProduct}>
+            <img src={image} alt="" className={classes.checkoutProduct__image} />
 
-            <p className={classes.checkoutProduct__price}>
-                <small>$</small>
-                <strong>20</strong>
-            </p>
-
-            <div className={classes.checkoutProduct__rating}>
-                ⭐⭐
+            <div className={classes.checkoutProduct__info}>
+                <p className={classes.checkoutProduct__title}>{title}
+                </p>
+                <p className={classes.checkoutProduct__price}>
+                    <small>$</small>
+                    <strong>{price}</strong>
+                </p>
+                <div className={classes.checkoutProduct__rating}>
+                    {Array(rating)
+                    .fill()
+                    .map((_, i) => (
+                        <p>⭐</p>
+                    ))}
+                </div>
+                <button onClick={removeFromBasket}>Remove from Basket</button>
             </div>
-
-            <button>Add to Basket</button>
         </div>
-    </div>
-  )
+    )
 }
 
 export default CheckoutProduct

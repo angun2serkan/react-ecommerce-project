@@ -16,7 +16,7 @@
     color: #111;
 }
 
-.checkout__image {
+.checkoutProduct__image {
     /* object-fit: contain; */
     width: 300px;
     height: 300px;
