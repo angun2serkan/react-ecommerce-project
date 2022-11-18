@@ -32,3 +32,37 @@
     font-size: 17px;
     font-weight: 800;
 }
+
+.checkoutProduct__button{
+    height: 3rem;
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background: #ff9f00;
+    
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color:aliceblue;
+    font-weight: 600;
+
+    z-index: 3;
+    cursor: pointer;
+}
+
+.checkoutProduct__button:hover{
+    height: 3.1rem;
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background: red;
+    font-size: larger;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color:aliceblue;
+    font-weight: 600;
+
+    z-index: 3;
+    cursor: pointer;
+  }
