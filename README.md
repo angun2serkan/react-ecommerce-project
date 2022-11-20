@@ -1,3 +1,27 @@
+
+# What Is This project For?
+I have been watching tutorials to learn ReactJs for a while. After spending some amount of hours in udemy and ReactJs documentation page, I think that I understood the philosophy and the basic logic. In my opion next step should be simulate real life problems and I wanted the clone Amazon's web page with little differences. This my First Project of dozens of projects that I will do in the near future... And the steps are just like these...
+
+- create a header
+- create a home page
+- create a checkout page
+- implement StateProvider, Reducer, useReducer Hook
+- add to chart and remove from chart functionalities with State Hooks
+- create a login page
+- authentication
+
+
+## Technologies & Frameworks that I used
+- react-router-dom 
+- react-currency-format
+- materialUI
+- React props
+- StateProvider & Reducer
+- React-Context-API
+- Firebase 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
